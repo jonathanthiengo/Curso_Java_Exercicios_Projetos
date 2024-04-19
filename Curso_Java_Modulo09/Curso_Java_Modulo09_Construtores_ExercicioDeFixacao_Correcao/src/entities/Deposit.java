@@ -3,7 +3,7 @@ package entities;
 import java.util.Date;
 
 public class Deposit {
-   private double amount;
+    private double amount;
 
     public Deposit(double amount) {
         this.amount = amount;

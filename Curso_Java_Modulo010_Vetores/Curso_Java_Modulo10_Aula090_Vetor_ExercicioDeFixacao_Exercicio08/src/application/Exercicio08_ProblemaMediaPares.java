@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler um vetor de N números inteiros. Em seguida, mostrar na tela a média
 aritmética somente dos números pares lidos, com uma casa decimal. Se nenhum número par for
@@ -46,24 +47,23 @@ public class Exercicio08_ProblemaMediaPares {
         sc.nextLine();//BUFFER REMOVE
         double[] vet = new double[numero];
 
-        for(int i = 0; i < vet.length ; i++){
+        for (int i = 0; i < vet.length; i++) {
             System.out.print("Digite um Numero: ");
             vet[i] = sc.nextDouble();
         }
         double mediaAritmetica = 0;
         int aux = 0;
 
-        for(int i = 0; i < vet.length ; i++){
-            if(vet[i] % 2 == 0){
+        for (int i = 0; i < vet.length; i++) {
+            if (vet[i] % 2 == 0) {
                 mediaAritmetica += vet[i];
                 aux++;
             }
         }
-        if(aux == 0){
+        if (aux == 0) {
             System.out.println("NENHUM NUMERO PAR");
-        }
-        else{
-            mediaAritmetica = mediaAritmetica/aux;
+        } else {
+            mediaAritmetica = mediaAritmetica / aux;
             System.out.printf("MEDIA DOS PARES = %.1f", mediaAritmetica);
 
         }

@@ -18,18 +18,18 @@ PI value: 3.14
 
 public class Main_Aula071_MembrosEstaticosVersao3 {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println("Entre Radius:");
-            double radius = sc.nextDouble();
-            double c = Radius_Aula071_MembrosEstaticosVersao3.circumference(radius);
-            double v = Radius_Aula071_MembrosEstaticosVersao3.volume(radius);
-            //TESTE
-            System.out.println("Circumference: " + c + "\nVolume: " + v + "n\nPI : " + Radius_Aula071_MembrosEstaticosVersao3.PI);
-            //
+        System.out.println("Entre Radius:");
+        double radius = sc.nextDouble();
+        double c = Radius_Aula071_MembrosEstaticosVersao3.circumference(radius);
+        double v = Radius_Aula071_MembrosEstaticosVersao3.volume(radius);
+        //TESTE
+        System.out.println("Circumference: " + c + "\nVolume: " + v + "n\nPI : " + Radius_Aula071_MembrosEstaticosVersao3.PI);
+        //
 
-            sc.close();
+        sc.close();
 
     }
 }

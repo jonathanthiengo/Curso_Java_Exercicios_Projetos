@@ -4,6 +4,7 @@ import entities.Ler_ProblemaMaisVelho_POO;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas idades. Os nomes
 devem ser armazenados em um vetor, e as idades em um outro vetor. Depois, mostrar na tela o nome
@@ -57,8 +58,8 @@ public class Exercicio09_ProblemaMaisVelho_POO {
         int auxI = 0;
         String auxNome = "";
 
-        for(int i = 0; i < pessoas.length ; i++){
-            System.out.printf("Dados da %d pessoa:\n",i+1);
+        for (int i = 0; i < pessoas.length; i++) {
+            System.out.printf("Dados da %d pessoa:\n", i + 1);
             System.out.print("Nome: ");
             String nome = sc.nextLine();
             System.out.print("Idade: ");
@@ -68,8 +69,8 @@ public class Exercicio09_ProblemaMaisVelho_POO {
         }
 
 
-        for(int i = 0; i < pessoas.length ; i++){
-            if(pessoas[i].getIdade() > auxI){
+        for (int i = 0; i < pessoas.length; i++) {
+            if (pessoas[i].getIdade() > auxI) {
                 auxI = pessoas[i].getIdade();
                 auxNome = pessoas[i].getNome();
             }

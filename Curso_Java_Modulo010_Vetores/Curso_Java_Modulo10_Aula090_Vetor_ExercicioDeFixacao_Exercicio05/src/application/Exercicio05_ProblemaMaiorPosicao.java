@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida, mostrar na tela
 o maior número do vetor (supor não haver empates). Mostrar também a posição do maior elemento,
@@ -40,7 +41,7 @@ public class Exercicio05_ProblemaMaiorPosicao {
         sc.nextLine();
         double[] numeros = new double[numero];
 
-        for(int i = 0; i < numeros.length ; i++){
+        for (int i = 0; i < numeros.length; i++) {
             System.out.print("Digite um Numero: ");
             numeros[i] = sc.nextDouble();
         }
@@ -48,8 +49,8 @@ public class Exercicio05_ProblemaMaiorPosicao {
 
         double maiorValor = 0;
         int posicaoValor = 0;
-        for(int i = 0; i <  numeros.length ;i++){
-            if(numeros[i] > maiorValor){
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maiorValor) {
                 maiorValor = numeros[i];
                 posicaoValor = i;
             }

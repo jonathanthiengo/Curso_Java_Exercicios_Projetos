@@ -21,22 +21,22 @@ DIAGONAL = 5.00
 
 public class Main_Aula069_ExercicioDeFixacao1 {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            Rectangle_Aula069_ExercicioDeFixacao1 rectangle = new Rectangle_Aula069_ExercicioDeFixacao1();
-            System.out.println("Enter rectangle width and height:");
-            System.out.print("Width: ");
-            rectangle.width = sc.nextDouble();
+        Rectangle_Aula069_ExercicioDeFixacao1 rectangle = new Rectangle_Aula069_ExercicioDeFixacao1();
+        System.out.println("Enter rectangle width and height:");
+        System.out.print("Width: ");
+        rectangle.width = sc.nextDouble();
 
-            System.out.print("Height: ");
-            rectangle.height = sc.nextDouble();
+        System.out.print("Height: ");
+        rectangle.height = sc.nextDouble();
 
-            //TESTE
-            System.out.println(rectangle);
-            //
+        //TESTE
+        System.out.println(rectangle);
+        //
 
-            sc.close();
+        sc.close();
 
     }
 }

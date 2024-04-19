@@ -23,29 +23,29 @@ Updated data: Joao Silva, $ 5600.00
 
 public class Main_Aula069_ExercicioDeFixacao2 {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            Employee_Aula069_ExercicioDeFixacao2 employee = new Employee_Aula069_ExercicioDeFixacao2();
-            System.out.println("Enter data:");
-            System.out.print("Name: ");
-            employee.name = sc.nextLine();
+        Employee_Aula069_ExercicioDeFixacao2 employee = new Employee_Aula069_ExercicioDeFixacao2();
+        System.out.println("Enter data:");
+        System.out.print("Name: ");
+        employee.name = sc.nextLine();
 
-            System.out.print("Gross Salary: ");
-            employee.grossSalary = sc.nextDouble();
+        System.out.print("Gross Salary: ");
+        employee.grossSalary = sc.nextDouble();
 
-            System.out.print("TAX: ");
-            employee.tax = sc.nextDouble();
+        System.out.print("TAX: ");
+        employee.tax = sc.nextDouble();
 
-            //TESTE
-            System.out.println("Employee: " + employee);
-            //
-            System.out.println("Which percentage to increase salary? ");
-            employee.increaseSalary(sc.nextDouble());
+        //TESTE
+        System.out.println("Employee: " + employee);
+        //
+        System.out.println("Which percentage to increase salary? ");
+        employee.increaseSalary(sc.nextDouble());
 
-            System.out.println("Update: " + employee);
+        System.out.println("Update: " + employee);
 
-            sc.close();
+        sc.close();
 
     }
 }

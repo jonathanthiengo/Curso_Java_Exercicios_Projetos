@@ -26,7 +26,6 @@ public class Program {
         System.out.println("Updated price: " + product.getPrice());
 
 
-
         System.out.println();
         System.out.println("Product data: " + product);
         System.out.println();

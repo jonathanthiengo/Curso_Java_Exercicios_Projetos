@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler nome, idade e altura de N pessoas, conforme exemplo. Depois, mostrar na
 tela a altura média das pessoas, e mostrar também a porcentagem de pessoas com menos de 16 anos,
@@ -56,8 +57,8 @@ public class Exercicio03_ProblemaAlturas {
         String[] nome = new String[numero];
         int[] idade = new int[numero];
 
-        for(int i = 0; i < nome.length ; i++){
-            System.out.printf("Dados da %da pessoa: ",i+1);
+        for (int i = 0; i < nome.length; i++) {
+            System.out.printf("Dados da %da pessoa: ", i + 1);
             System.out.print("\nNome: ");
             nome[i] = sc.nextLine();
 
@@ -71,21 +72,21 @@ public class Exercicio03_ProblemaAlturas {
         }
 
         double aux = 0;
-        for(int i = 0; i < altura.length ;i++){
+        for (int i = 0; i < altura.length; i++) {
             aux += altura[i];
         }
-        System.out.printf("\nAltura média = %.2f", (aux/numero));
+        System.out.printf("\nAltura média = %.2f", (aux / numero));
         aux = 0;
-        for(int i = 0; i < idade.length ;i++){
-            if(idade[i] < 16){
+        for (int i = 0; i < idade.length; i++) {
+            if (idade[i] < 16) {
                 aux += 1;
             }
         }
-        System.out.printf("\nPessoas com menos de 16 anos: %.1f%%", (aux*100)/numero);
+        System.out.printf("\nPessoas com menos de 16 anos: %.1f%%", (aux * 100) / numero);
 
-        for(int i = 0; i < idade.length ;i++){
-            if(idade[i] < 16){
-                System.out.print("\n"+nome[i]);
+        for (int i = 0; i < idade.length; i++) {
+            if (idade[i] < 16) {
+                System.out.print("\n" + nome[i]);
             }
         }
         sc.close();

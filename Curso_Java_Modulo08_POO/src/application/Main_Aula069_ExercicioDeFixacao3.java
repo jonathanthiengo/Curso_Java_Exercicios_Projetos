@@ -34,28 +34,28 @@ MISSING 8.00 POINTS
 
 public class Main_Aula069_ExercicioDeFixacao3 {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            Aluno_Aula069_ExercicioDeFixacao3 aluno = new Aluno_Aula069_ExercicioDeFixacao3();
-            System.out.println("Entrada:");
-            System.out.print("Name: ");
-            aluno.name = sc.nextLine();
+        Aluno_Aula069_ExercicioDeFixacao3 aluno = new Aluno_Aula069_ExercicioDeFixacao3();
+        System.out.println("Entrada:");
+        System.out.print("Name: ");
+        aluno.name = sc.nextLine();
 
-            System.out.print("Nota do Primeiro TRIMESTRE: ");
-            aluno.trimestre1 = sc.nextDouble();
+        System.out.print("Nota do Primeiro TRIMESTRE: ");
+        aluno.trimestre1 = sc.nextDouble();
 
-            System.out.print("Nota do Segundo TRIMESTRE: ");
-            aluno.trimestre2 = sc.nextDouble();
+        System.out.print("Nota do Segundo TRIMESTRE: ");
+        aluno.trimestre2 = sc.nextDouble();
 
-            System.out.print("Nota do Terceiro TRIMESTRE: ");
-            aluno.trimestre3 = sc.nextDouble();
+        System.out.print("Nota do Terceiro TRIMESTRE: ");
+        aluno.trimestre3 = sc.nextDouble();
 
-            //TESTE
-            System.out.println("SAIDA: \n" + aluno);
-            //
+        //TESTE
+        System.out.println("SAIDA: \n" + aluno);
+        //
 
-            sc.close();
+        sc.close();
 
     }
 }

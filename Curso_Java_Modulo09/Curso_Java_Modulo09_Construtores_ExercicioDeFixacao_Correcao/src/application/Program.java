@@ -34,11 +34,11 @@ public class Program {
         String holder = sc.nextLine();
         System.out.print("Is there na initial deposit (y/n)? ");
         char response = sc.next().charAt(0); // PEGA SOMENTE 1 char
-        if(response == 'y'){
+        if (response == 'y') {
             System.out.print("Enter initial deposit value: ");
             double initialDeposit = sc.nextDouble();
             account = new Account(number, holder, initialDeposit);
-        }else{
+        } else {
             account = new Account(number, holder);
         }
 

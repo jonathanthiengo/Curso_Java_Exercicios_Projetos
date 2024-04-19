@@ -6,26 +6,27 @@ public class Product {
     private int quantity;
 
 
-    public Product(){
+    public Product() {
 
     }
 
-    public Product(String name, double price, int quantity){
+    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
-    public Product(String name, double price){
+
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
     ///METODO GET
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 
@@ -35,10 +36,11 @@ public class Product {
 
 
     ///METODO SET
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-    public void setPrice(double price){
+
+    public void setPrice(double price) {
         this.price = price;
     }
 

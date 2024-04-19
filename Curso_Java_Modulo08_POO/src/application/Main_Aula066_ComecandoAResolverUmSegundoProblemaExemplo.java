@@ -1,6 +1,7 @@
 package application;
 
 import entities.Product_Aula066_ComecandoAResolverUmSegundoProblemaExemplo;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -27,33 +28,33 @@ Updated data: TV, $ 900.00, 12 units, Total: $ 10800.00*/
 
 public class Main_Aula066_ComecandoAResolverUmSegundoProblemaExemplo {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            Product_Aula066_ComecandoAResolverUmSegundoProblemaExemplo product = new Product_Aula066_ComecandoAResolverUmSegundoProblemaExemplo();
-            System.out.println("Enter Product Data: ");
-            System.out.print("Name: ");
-            product.name = sc.nextLine();
+        Product_Aula066_ComecandoAResolverUmSegundoProblemaExemplo product = new Product_Aula066_ComecandoAResolverUmSegundoProblemaExemplo();
+        System.out.println("Enter Product Data: ");
+        System.out.print("Name: ");
+        product.name = sc.nextLine();
 
-            System.out.print("Price: ");
-            product.price = sc.nextDouble();
+        System.out.print("Price: ");
+        product.price = sc.nextDouble();
 
-            System.out.print("Quantity in Stock: ");
-            product.quantity = sc.nextInt();
+        System.out.print("Quantity in Stock: ");
+        product.quantity = sc.nextInt();
 
-            //TESTE
-            System.out.println("Product data: " + product);
-            //
-            System.out.printf("\n----------------------------------\n");
-            System.out.println("Enter the number of Products to be ADDED in Stock: ");
-            product.addProducts(sc.nextInt());
-            System.out.println("\nUpdated data: " + product);
+        //TESTE
+        System.out.println("Product data: " + product);
+        //
+        System.out.printf("\n----------------------------------\n");
+        System.out.println("Enter the number of Products to be ADDED in Stock: ");
+        product.addProducts(sc.nextInt());
+        System.out.println("\nUpdated data: " + product);
 
-            System.out.printf("\n----------------------------------\n");
-            System.out.println("Enter the number of Products to be REMOVED in Stock: ");
-            product.removeProducts(sc.nextInt());
-            System.out.println("\nUpdated data: " + product);
-            sc.close();
+        System.out.printf("\n----------------------------------\n");
+        System.out.println("Enter the number of Products to be REMOVED in Stock: ");
+        product.removeProducts(sc.nextInt());
+        System.out.println("\nUpdated data: " + product);
+        sc.close();
 
     }
 }

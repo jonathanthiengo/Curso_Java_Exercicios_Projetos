@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler um número inteiro N e depois um vetor de N números reais. Em seguida,
 mostrar na tela a média aritmética de todos elementos com três casas decimais. Depois mostrar todos
@@ -46,20 +47,20 @@ public class Exercicio07_ProblemaAbaixoDaMedia_POO {
         sc.nextLine();
         double[] vet = new double[numero];
 
-        for(int i = 0; i < vet.length ; i++){
+        for (int i = 0; i < vet.length; i++) {
             System.out.print("Digite um Numero: ");
             vet[i] = sc.nextDouble();
         }
         double media = 0;
 
-        for(int i = 0; i < vet.length ; i++){
+        for (int i = 0; i < vet.length; i++) {
             media += vet[i];
         }
-        media = media/numero;
+        media = media / numero;
         System.out.printf("\nMEDIA DO VETOR = %.3f", media);
         System.out.println("\nELEMENTOS ABAIXO DA MEDIA: ");
-        for(int i = 0; i <  vet.length ;i++){
-            if(vet[i] < media) {
+        for (int i = 0; i < vet.length; i++) {
+            if (vet[i] < media) {
                 System.out.printf("%.1f\n", vet[i]);
             }
         }

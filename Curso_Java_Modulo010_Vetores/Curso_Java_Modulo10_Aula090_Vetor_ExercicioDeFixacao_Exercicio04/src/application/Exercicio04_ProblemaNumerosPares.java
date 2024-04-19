@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler nome, idade e altura de N pessoas, conforme exemplo. Depois, mostrar na
 tela a altura média das pessoas, e mostrar também a porcentagem de pessoas com menos de 16 anos,
@@ -54,21 +55,21 @@ public class Exercicio04_ProblemaNumerosPares {
         sc.nextLine();
         int[] numeros = new int[numero];
 
-        for(int i = 0; i < numeros.length ; i++){
+        for (int i = 0; i < numeros.length; i++) {
             System.out.print("Digite um Numero: ");
             numeros[i] = sc.nextInt();
         }
 
         System.out.println("\nNUMEROS PARES: ");
-        int aux=0;
-        for(int i = 0; i < numeros.length ;i++){
-            if(numeros[i] % 2 == 0){
+        int aux = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 == 0) {
                 System.out.printf("%d   ", numeros[i]);
                 aux += 1;
             }
         }
 
-        System.out.printf("\n\nQUANTIDADE DE PARES = %d",aux);
+        System.out.printf("\n\nQUANTIDADE DE PARES = %d", aux);
         sc.close();
 
     }

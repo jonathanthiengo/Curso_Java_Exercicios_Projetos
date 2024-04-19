@@ -4,6 +4,7 @@ import entities.Ler_ProblemaAprovados_POO;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler um conjunto de N nomes de alunos, bem como as notas que eles tiraram
 no 1º e 2º semestres. Cada uma dessas informações deve ser armazenada em um vetor. Depois, imprimir
@@ -63,8 +64,8 @@ public class Exercicio010_ProblemaAprovados_POO {
         Ler_ProblemaAprovados_POO[] aluno = new Ler_ProblemaAprovados_POO[numero];
 
 
-        for(int i = 0; i < aluno.length ; i++){
-            System.out.printf("\nDigite o nome do %dº aluno:\n",i+1);
+        for (int i = 0; i < aluno.length; i++) {
+            System.out.printf("\nDigite o nome do %dº aluno:\n", i + 1);
             String nome = sc.nextLine();
             System.out.print("Digite a nota do 1º Semestre: ");
             double nota1 = sc.nextDouble();
@@ -75,8 +76,8 @@ public class Exercicio010_ProblemaAprovados_POO {
         }
 
         System.out.println("Alunos aprovados: ");
-        for(int i = 0; i < aluno.length ; i++){
-            if((aluno[i].getSemestre1() + aluno[i].getSemestre2()) / 2 >= 6){
+        for (int i = 0; i < aluno.length; i++) {
+            if ((aluno[i].getSemestre1() + aluno[i].getSemestre2()) / 2 >= 6) {
                 System.out.println(aluno[i].getNome());
             }
         }

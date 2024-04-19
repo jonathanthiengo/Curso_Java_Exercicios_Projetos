@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas idades. Os nomes
 devem ser armazenados em um vetor, e as idades em um outro vetor. Depois, mostrar na tela o nome
@@ -51,8 +52,8 @@ public class Exercicio09_ProblemaMaisVelho {
         int auxI = 0;
         String auxNome = "";
 
-        for(int i = 0; i < nome.length ; i++){
-            System.out.printf("Dados da %d pessoa:\n",i+1);
+        for (int i = 0; i < nome.length; i++) {
+            System.out.printf("Dados da %d pessoa:\n", i + 1);
             System.out.print("Nome: ");
             nome[i] = sc.nextLine();
             System.out.print("Idade: ");
@@ -61,8 +62,8 @@ public class Exercicio09_ProblemaMaisVelho {
         }
 
 
-        for(int i = 0; i < idade.length ; i++){
-            if(idade[i] > auxI){
+        for (int i = 0; i < idade.length; i++) {
+            if (idade[i] > auxI) {
                 auxI = idade[i];
                 auxNome = nome[i];
             }

@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Tem-se um conjunto de dados contendo a altura e o gênero (M, F) de N pessoas. Fazer um programa
 que calcule e escreva a maior e a menor altura do grupo, a média de altura das mulheres, e o número
@@ -52,13 +53,13 @@ public class Exercicio011_ProblemaDadosPessoas {
         int numeroDeMulheres = 0;
 
 
-        for(int i = 0; i < genero.length ; i++){
-            System.out.printf("\nDigite a Altura e o Genero (M / F) da %dº Pessoa:\n",i+1);
+        for (int i = 0; i < genero.length; i++) {
+            System.out.printf("\nDigite a Altura e o Genero (M / F) da %dº Pessoa:\n", i + 1);
             System.out.print("Digite a altura: ");
             altura[i] = sc.nextDouble();
             System.out.print("Digite o Genero: ");
             genero[i] = sc.next().charAt(0);
-            while(genero[i] != 'M' && genero[i] != 'F'){
+            while (genero[i] != 'M' && genero[i] != 'F') {
                 System.out.println("Digite M ou F");
                 genero[i] = sc.next().charAt(0);
             }
@@ -66,24 +67,23 @@ public class Exercicio011_ProblemaDadosPessoas {
 
         }
 
-        for(int i = 0; i < genero.length ; i++){
-            if(genero[i] == 'M' || genero[i] == 'm'){
+        for (int i = 0; i < genero.length; i++) {
+            if (genero[i] == 'M' || genero[i] == 'm') {
                 numeroDeHomens++;
-            }
-            else{
+            } else {
                 somaAlturaMulheres += altura[i];
                 numeroDeMulheres++;
             }
-            if(menorAltura > altura[i]){
+            if (menorAltura > altura[i]) {
                 menorAltura = altura[i];
             }
-            if(maiorAltura < altura[i]){
+            if (maiorAltura < altura[i]) {
                 maiorAltura = altura[i];
             }
         }
         System.out.println("\nMenor altura = " + menorAltura);
         System.out.println("Maior altura = " + maiorAltura);
-        System.out.println("Media das alturas das mulheres = " + String.format("%.2f", somaAlturaMulheres/numeroDeMulheres));
+        System.out.println("Media das alturas das mulheres = " + String.format("%.2f", somaAlturaMulheres / numeroDeMulheres));
         System.out.println("Numero de Homens = " + numeroDeHomens);
 
         sc.close();

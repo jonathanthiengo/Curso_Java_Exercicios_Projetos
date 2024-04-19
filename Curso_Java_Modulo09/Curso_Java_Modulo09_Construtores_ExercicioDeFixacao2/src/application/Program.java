@@ -36,10 +36,10 @@ public class Program {
 
         System.out.println("Is there na initial deposit (y/n)?");
         String select = sc.nextLine();
-        if(Objects.equals(select, "y")){
+        if (Objects.equals(select, "y")) {
             System.out.println("Enter initial deposit value: ");
             client.Deposit(sc.nextDouble());
-        }else{
+        } else {
             System.out.println("");
         }
 

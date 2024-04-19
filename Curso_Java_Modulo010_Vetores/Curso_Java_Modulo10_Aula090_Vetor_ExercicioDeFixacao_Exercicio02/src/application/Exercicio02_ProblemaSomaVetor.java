@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida:
 - Imprimir todos os elementos do vetor
@@ -34,7 +35,7 @@ public class Exercicio02_ProblemaSomaVetor {
         int numero = sc.nextInt();
         double[] vect = new double[numero];
 
-        for(int i = 0; i < vect.length ; i++){
+        for (int i = 0; i < vect.length; i++) {
             System.out.print("Digite um numero: ");
             vect[i] = sc.nextInt();
         }
@@ -42,16 +43,16 @@ public class Exercicio02_ProblemaSomaVetor {
 
         System.out.print("VALORES = ");
 
-        for(int i = 0; i < vect.length ;i++){
-            System.out.printf("%.1f  ",vect[i]);
+        for (int i = 0; i < vect.length; i++) {
+            System.out.printf("%.1f  ", vect[i]);
         }
 
         double aux = 0;
-        for(int i = 0; i < vect.length ;i++){
+        for (int i = 0; i < vect.length; i++) {
             aux += vect[i];
         }
         System.out.printf("\nSOMA = %.2f", aux);
-        System.out.printf("\nMEDIA = %.2f", (aux/numero));
+        System.out.printf("\nMEDIA = %.2f", (aux / numero));
         sc.close();
 
     }

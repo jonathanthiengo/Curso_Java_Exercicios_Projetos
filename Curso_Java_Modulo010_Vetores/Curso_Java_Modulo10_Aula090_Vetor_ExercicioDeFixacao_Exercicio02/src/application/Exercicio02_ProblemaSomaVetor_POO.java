@@ -44,7 +44,7 @@ public class Exercicio02_ProblemaSomaVetor_POO {
         int numero = sc.nextInt();
         Ler_ProblemaSomaVetor_POO[] vect = new Ler_ProblemaSomaVetor_POO[numero];
 
-        for(int i = 0; i < vect.length ; i++){
+        for (int i = 0; i < vect.length; i++) {
             System.out.print("Digite um numero: ");
             vect[i] = new Ler_ProblemaSomaVetor_POO(sc.nextDouble());
         }
@@ -52,16 +52,16 @@ public class Exercicio02_ProblemaSomaVetor_POO {
 
         System.out.print("VALORES = ");
 
-        for(int i = 0; i < vect.length ;i++){
-            System.out.printf("%.1f  ",vect[i].getNumero());
+        for (int i = 0; i < vect.length; i++) {
+            System.out.printf("%.1f  ", vect[i].getNumero());
         }
 
         double aux = 0;
-        for(int i = 0; i < vect.length ;i++){
+        for (int i = 0; i < vect.length; i++) {
             aux += vect[i].getNumero();
         }
         System.out.printf("\nSOMA = %.2f", aux);
-        System.out.printf("\nMEDIA = %.2f", (aux/numero));
+        System.out.printf("\nMEDIA = %.2f", (aux / numero));
         sc.close();
 
     }

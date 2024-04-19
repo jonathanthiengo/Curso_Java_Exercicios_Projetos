@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros
 e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos.
@@ -33,7 +34,7 @@ public class Exercicio01_ProblemaNegativos {
 
         System.out.print("Quantos numeros voce vai digitar? ");
         int n = sc.nextInt();
-        while (n > 10){
+        while (n > 10) {
             System.out.println("Limite Excedido. Até 10 numeros permitidos para serem digitados.");
             System.out.print("Quantos numeros voce vai digitar? ");
             n = sc.nextInt();
@@ -41,14 +42,14 @@ public class Exercicio01_ProblemaNegativos {
 
         int[] vect = new int[n];
 
-        for(int i = 0; i < vect.length ; i++){
+        for (int i = 0; i < vect.length; i++) {
             System.out.print("Digite um numero: ");
             vect[i] = sc.nextInt();
         }
-    System.out.println("NUMEROS NEGATIVOS: ");
+        System.out.println("NUMEROS NEGATIVOS: ");
 
-        for(int i = 0; i < vect.length ;i++){
-            if(vect[i] < 0){
+        for (int i = 0; i < vect.length; i++) {
+            if (vect[i] < 0) {
                 System.out.println(vect[i]);
             }
         }

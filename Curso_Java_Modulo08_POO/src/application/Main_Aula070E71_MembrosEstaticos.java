@@ -18,18 +18,18 @@ PI value: 3.14
 
 public class Main_Aula070E71_MembrosEstaticos {
     public static void main(String[] args) {
-            Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-            Radius_Aula070E71_MembrosEstaticos radius = new Radius_Aula070E71_MembrosEstaticos();
-            System.out.println("Entre Radius:");
-            radius.radius = sc.nextDouble();
+        Radius_Aula070E71_MembrosEstaticos radius = new Radius_Aula070E71_MembrosEstaticos();
+        System.out.println("Entre Radius:");
+        radius.radius = sc.nextDouble();
 
-            //TESTE
-            System.out.println("SAIDA: \n" + radius);
-            //
+        //TESTE
+        System.out.println("SAIDA: \n" + radius);
+        //
 
-            sc.close();
+        sc.close();
 
     }
 }

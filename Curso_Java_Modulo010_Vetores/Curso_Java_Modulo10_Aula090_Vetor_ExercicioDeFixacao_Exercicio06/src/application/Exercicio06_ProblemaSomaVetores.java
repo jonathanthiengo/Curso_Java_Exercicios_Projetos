@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /*
 Faça um programa para ler dois vetores A e B, contendo N elementos cada. Em seguida, gere um
 terceiro vetor C onde cada elemento de C é a soma dos elementos correspondentes de A e B. Imprima
@@ -56,18 +57,18 @@ public class Exercicio06_ProblemaSomaVetores {
         int[] vetC = new int[numero];
 
         System.out.println("Digite os valores do vetor A: ");
-        for(int i = 0; i < vetA.length ; i++){
+        for (int i = 0; i < vetA.length; i++) {
             System.out.print("Digite um Numero: ");
             vetA[i] = sc.nextInt();
         }
         System.out.println("Digite os valores do vetor B: ");
-        for(int i = 0; i < vetB.length ; i++){
+        for (int i = 0; i < vetB.length; i++) {
             System.out.print("Digite um Numero: ");
             vetB[i] = sc.nextInt();
             vetC[i] = vetA[i] + vetB[i];
         }
         System.out.println("VETOR RESULTANTE:");
-        for(int i = 0; i <  vetC.length ;i++){
+        for (int i = 0; i < vetC.length; i++) {
             System.out.println(vetC[i]);
         }
 
